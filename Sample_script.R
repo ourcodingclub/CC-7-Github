@@ -37,11 +37,3 @@ theme.clean <- function(){
 
 # Commit, pull, push!
 
-library(ggplot2)
-(temp.el <- ggplot (temp_elevation, aes(x = Elevation.m, y = Soil.temp.mean)) +
-   geom_point(colour = "#8B4513") +
-   geom_smooth(method = lm, colour = "#8B4513", fill = "#8B4513", alpha = 0.6) +
-   labs(x = "Elevation (m)", y = "Mean soil temperature (°C)") +
-   theme.clean())
-
-temp.el
