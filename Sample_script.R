@@ -4,7 +4,7 @@
 #                                                          #
 ############################################################
 
-# Add in your name
+# Samuel Kellerhals
 # Add in purpose of this script
 
 # Libraries ----
