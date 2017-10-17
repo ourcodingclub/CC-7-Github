@@ -7,8 +7,16 @@
 # Add in your name
 # Claudia
 # Add in purpose of this script
+# To learn about version control on github
+
+# git config --global user.email "you@example.com"
+# git config --global user.name "Your Name"
 
 # Libraries ----
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+library(readr)
 
 # Functions ----
 # This is a ggplot function for a nice clean theme
@@ -31,10 +39,18 @@ theme.clean <- function(){
 }
 
 # Load data ----
+setwd("C:/Users/clauv/Desktop/Uni/Coding_club/Week_5/CC-7-Github")
+temp_elevation <- read.csv("temp_elevation.csv")
 
 # Make a plot showing how soil temperature changes with elevation ----
+(temp.el <- ggplot (temp_elevation, aes(x=Elevation.m, y=Soil.temp.mean)) +
+   geom_point(colour = "#8B4513") +
+   geom_smooth(method = lm, colour = "#8B4513", fill = "#8B4513", alpha = 0.6) +
+   labs(x = "Elevation (m)", y = "Mean soil temperature (degC)") +
+   theme.clean())
 
 # Save your plot in your project directory
+
 
 # Commit, pull, push!
 
