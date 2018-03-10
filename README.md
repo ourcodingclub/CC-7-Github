@@ -8,6 +8,8 @@ The full tutorial is available to view here: https://ourcodingclub.github.io/201
 
 `git_cli.png` provides a flow chart for some simple git commands to be used in the command line. `{hub}` indicates that the command requires installation of [`hub`](https://github.com/github/hub), a wrapper for `Git` that increases functionality 
 
+Check out https://ourcodingclub.github.io/workshop/ to learn how you can get involved!
+
 We would love to hear your feedback on the tutorial, whether you did it at a Coding Club workshop or online: 
 https://www.surveymonkey.co.uk/r/NXNHYYX
 
